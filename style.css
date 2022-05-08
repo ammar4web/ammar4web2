@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.my-content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.my-content .my-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+header {
+  background-color: #212529;
+  color: #f8f9fa;
+}
+
+header span {
+  font-size: x-large;
+  padding: 20px;
+}
+
+header span span {
+  margin-left: -20px;
+  font-size: medium;
+  color: #e41b17;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+header nav ul li a {
+  font-size: large;
+  padding: 25px;
+}
+
+header nav ul li a:hover {
+  background-color: #e41b17;
+}
+
+.r-up {
+  font-size: xx-large;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 10px 30px;
+  padding: 10px 20px 0 20px;
+  text-decoration: none;
+  background-color: #e41b17;
+  color: #fff;
+  background-position: 75%;
+}
+
+.home {
+  min-height: calc(100vh - 67.2px);
+  background-image: url(lee-campbell-DtDlVpy-vvQ-unsplash.jpg);
+  background-size: cover;
+  background-position: left top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.home .my-content {
+  width: 80%;
+}
+
+.home .my-row {
+  margin-bottom: 20%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 1.5em;
+  background-color: #21252940;
+  color: #f8f9fa;
+  text-align: center;
+}
+
+.home .my-row h1 {
+  padding: 20px 0;
+  color: #ffffff;
+}
+
+.home .my-row p {
+  font-size: 0.8em !important;
+  padding: 20px 0;
+  background-color: #e41b1705;
+  color: #f8f9fa;
+}
+
+.portfolio {
+  min-height: calc(100vh);
+  background-color: #eee;
+}
+
+.portfolio .my-content {
+  padding-top: 50px;
+}
+
+.portfolio .my-content .my-row {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.portfolio .my-content .my-row h2 {
+  text-align: center;
+  font-size: 75px;
+  font-weight: 100;
+  letter-spacing: 5px;
+  color: #e41b1799;
+}
+
+.portfolio .my-content .my-row .portfolio-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr)) [auto-fill];
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 30px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+.portfolio .my-content .my-row .portfolio-content .card {
+  background-color: white;
+}
+
+.portfolio .my-content .my-row .portfolio-content .card img {
+  max-width: 100%;
+}
+
+.portfolio .my-content .my-row .portfolio-content .card .info {
+  padding: 20px;
+}
+
+.portfolio .my-content .my-row .portfolio-content .card .info h3 {
+  margin: 0;
+}
+
+.portfolio .my-content .my-row .portfolio-content .card .info p {
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.contact {
+  background-color: #f8f9fa;
+  min-height: calc(100vh - 100px);
+}
+
+.contact .my-content {
+  padding-top: 80px;
+}
+
+.contact .my-content .my-row {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.contact .my-content h2 {
+  text-align: center;
+  font-size: 75px;
+  font-weight: 100;
+  letter-spacing: 5px;
+  color: #e41b1799;
+}
+
+.contact .my-content .info {
+  text-align: center;
+  margin-top: 75px;
+}
+
+.contact .my-content .info .info-t {
+  font-size: 35px;
+  font-weight: 800;
+  color: #212529;
+  letter-spacing: -2px;
+  margin-bottom: 15px;
+}
+
+.contact .my-content .info a {
+  display: block;
+  font-size: 35px;
+  font-weight: 800;
+  color: #e41b17;
+  text-decoration: none;
+  margin-top: 25px;
+}
+
+.contact .my-content .info .phone {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 75px;
+  font-weight: 100;
+  letter-spacing: -2px;
+  color: #21252999;
+}
+
+footer {
+  background-color: #212529;
+  color: #f8f9fa;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+/* I add this by css not scss */
+@media (max-width: 576px) {
+  #header {
+    height: 140px !important;
+  }
+
+  #header nav ul {
+    width: 100% !important;
+  }
+
+  #header nav {
+    margin-top: 20px;
+  }
+
+  .my-row {
+    flex-direction: column !important;
+  }
+
+  .my-row > span {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 5px !important;
+  }
+  .insid-span-header {
+    margin-top: 5px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
