@@ -291,14 +291,39 @@ footer {
     flex-direction: column !important;
   }
 
-  .my-row > span {
+  .my-row > a {
     display: flex;
     justify-content: center !important;
     align-items: center !important;
     padding: 5px !important;
+    color: inherit;
+    text-decoration: none;
   }
+
+  /* .my-row > span {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 5px !important;
+  } */
   .insid-span-header {
     margin-top: 5px;
+  }
+
+  .portfolio h2,
+  .contact .my-content h2 {
+    font-size: 48px !important;
+  }
+
+  .portfolio .portfolio-content {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .contact .my-content .info a,
+  .contact .my-content .info .info-t,
+  .contact .my-content .info .phone {
+    font-size: 22px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
