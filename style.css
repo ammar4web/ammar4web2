@@ -133,6 +133,15 @@ header nav ul li a:hover {
   text-align: center;
 }
 
+.my-row > a {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 5px !important;
+  color: inherit;
+  text-decoration: none;
+}
+
 .home .my-row h1 {
   padding: 20px 0;
   color: #ffffff;
